@@ -8,7 +8,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.json({
     app: APP_NAME,
-    message: 'Hello from Dockerized again 45 Node.js app!hihihihihiihihhihihihihihihi',
+    message: 'Hello from Dockerized again 456 Node.js app!hihihihihiihihhihihihihihihi',
     env: process.env.NODE_ENV || 'development'
   });
 });
