@@ -1,0 +1,18 @@
+{
+  "name": "docker-node-learn",
+  "version": "1.0.0",
+  "description": "Tiny Express app for containerization learning",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      target: runtime
+    image: docker-node-learn:latest
+    container_name: docker-node-learn
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - APP_NAME=docker-node-learn
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/app:delegated
+      - /usr/src/app/node_modules
+    command: npm run dev
+    restart: unless-stopped
